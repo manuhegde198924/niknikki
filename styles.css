@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.catch-me {
+    width: 200px;
+    height: 200px;
+    background-color:burlywood;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catch-me .text {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.catch-me:hover .text {
+    transform: translateY(-30px);
+}
+
+.catch-me .butterfly {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: opacity 0.3s, transform 1s ease-in-out;
+}
+
+.catch-me:hover .butterfly {
+    opacity: 1;
+    transform: rotate(720deg);
+}
