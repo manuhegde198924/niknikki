@@ -7,12 +7,59 @@
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
+    <div>
+
+        <button>Save</button>
+        
+        </div>
+    
+  
+    
+   
+    
+    <div><button id="theme-toggle" style="color:darkgoldenrod" >Amazon Top developer</button></div> 
     <div class="container">
         <div id="catch-me-div" class="catch-me">
-            <span class="text">Catch me</span>
-            <img class="butterfly" src="sonika-agarwal-WBPcT5DC8wo-unsplash.jpg" alt="Butterfly">
+            <span class="text" style="color:rgb(58, 161, 115)">HEY I AM NIKHIL NAVALI THIS IS HOW I live FOLLOW ME </span>
+            <img class="butterfly" src="WhatsApp Image 2023-10-29 at 10.05.01_e980395a.jpg" alt="Butterfly" width="500">
         </div>
     </div>
+    <div class="images">
+    <img src="./WhatsApp Image 2023-10-29 at 10.17.32_9a77a8c5.jpg" width="200" height="400"/>
+    <img src="./WhatsApp Image 2023-10-29 at 10.32.22_04e27527.jpg" width="200" height="400"/>
+    <img src="./WhatsApp Image 2023-10-29 at 10.32.23_38010607.jpg" width="200" height="400"/>
+    <img src="./WhatsApp Image 2023-10-29 at 10.32.23_4d1102c8.jpg" width="200" height="400"/>
+    <img src="./WhatsApp Image 2023-10-29 at 10.32.23_51d18e55.jpg" width="200" height="400"/>
+    <div></div>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300' rel='stylesheet' type='text/css'>
+
+<canvas id="c"></canvas>
+
+<div class="container">
+    <button style="color:blue">I'm a geek</button>
+</div>
+<div class="codepen-by">CodePen by Cole Waldrip</div>
+
+<script id="shader-fs" type="x-shader/x-fragment">
+				#ifdef GL_ES
+				  precision highp float;
+				  #endif
+    		void main(void) {
+    		 gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+    		}
+		</script>
+
+  <script id="shader-vs" type="x-shader/x-vertex">
+    	attribute vec3 vertexPosition;
+
+  	uniform mat4 modelViewMatrix;
+  	uniform mat4 perspectiveMatrix;
+
+   	void main(void) {
+  		gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+  	}
+  </script>
+  
     <script src="./index.js"></script>
 </body>
 </html>

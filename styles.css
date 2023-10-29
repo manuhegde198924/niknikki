@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
+ 
 }
 
 .container {
@@ -10,35 +11,39 @@ body {
 }
 
 .catch-me {
-    width: 200px;
-    height: 200px;
+    width: 700px;
+    height: 400px;
     background-color:burlywood;
     text-align: center;
     font-size: 16px;
     position: relative;
     cursor: pointer;
     transition: all 0.3s;
-    border-radius: 50%;
+    border-radius: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('WhatsApp\ Image\ 2023-10-29\ at\ 10.05.01_e980395a.jpg');
 }
 
 .catch-me .text {
     z-index: 1;
     position: relative;
-    color: #fff;
+    color:darkred;
     transform: translateY(0);
     transition: transform 0.2s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
 }
 
 .catch-me:hover .text {
     transform: translateY(-30px);
+
 }
 
 .catch-me .butterfly {
     position: absolute;
-    width: 60px;
+    width: 500px;
     height: auto;
     opacity: 0;
     transform: rotate(0deg);
@@ -49,3 +54,114 @@ body {
     opacity: 1;
     transform: rotate(720deg);
 }
+body {
+    margin: 0;
+  }
+  
+  .container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 1000px 0 #333;
+  }
+  
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    height: 20%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    font: 300 2em/1em 'Quicksand', sans-serif;
+    border: 0;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    border-radius: 10em;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    outline: none;
+    
+    &.click {
+      animation: color 900ms linear;
+    }
+  }
+  
+  @keyframes color {
+    0%, 20%, 35%, 55% { color: #19569A; }
+    10%, 30%, 40%, 70% { color: white; }
+  }
+  @import "compass/css3";
+
+@import "compass/reset";
+@import "compass/css3";
+
+body{
+  overflow: hidden;
+}
+
+canvas{
+  width: 100%;
+  height: 100%;
+}
+/* Animation property */
+button {
+    animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+ 
+  
+  button {
+    position: absolute;
+    left: calc(50% - 3em);
+    top: calc(50% - 2em);
+    
+    height: 4em;
+    width: 7em;
+    
+    background: #444;
+    background: linear-gradient(top, #555, #333);
+    border: none;
+    border-top: 3px solid orange;
+    border-radius: 0 0 0.2em 0.2em;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 1em;
+    transform-origin: 50% 5em;
+  }
+  #theme-toggle{
+    width:60%;
+  }
